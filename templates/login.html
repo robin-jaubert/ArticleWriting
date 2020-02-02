@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <form method="post" id="" action="">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Se connecter">
+    </form>
+{% endblock %}

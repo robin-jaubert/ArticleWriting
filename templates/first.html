@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <section class="home-div">
+    <div class="paragraphe-home">
+        <h1> Future of Post-it </h1>
+        <p>
+            Site web créé en Django dans le cadre du module de CMS et framework à la licence professionnelle DEV WEB. <br>
+            Sur ce site, vous pourrez créer des Post-it avec des rappels et les afficher dans un dashboard.
+        </p>
+        <button> <a href="{% url 'login' %}"> Se connecter </a> </button>
+        <button> <a href="{% url 'register' %}"> S'inscrire </a> </button>
+    </div>
+</section>
+{% endblock %}
+
